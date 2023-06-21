@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Адаптивна розмітка з використанням grid layout</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		.wrapper {
+			margin: 3px;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			grid-gap: 3px;
+		}
+
+		.block {
+			padding: 20px;
+			border: 1px solid #fff;
+		}
+
+		@media (max-width: 499px) {
+			.block {
+				grid-column: span 1;
+			}
+		}
+
+		@media (min-width: 500px) and (max-width: 749px) {
+			.block {
+				grid-column: span 2;
+			}
+		}
+
+		@media (min-width: 750px) and (max-width: 949px) {
+			.block {
+				grid-column: span 3;
+			}
+		}
+
+		@media (min-width: 950px) and (max-width: 1199px) {
+			.block {
+				grid-column: span 4;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			.block {
+				grid-column: span 5;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="block" style="background-color: #ff8080;"></div>
+		<div class="block" style="background-color: #80ff80;"></div>
+		<div class="block" style="background-color: #8080ff;"></div>
+		<div class="block" style="background-color: #ffff80;"></div>
+		<div class="block" style="background-color: #80ffff;"></div>
+		<div class="block" style="background-color: #ff80ff;"></div>
+	</div>
+</body>
+</html>

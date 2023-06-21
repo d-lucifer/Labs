@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(60deg, rgba(200, 100, 217, 1) 27%, rgba(40, 200, 65, 1) 60%);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    text-indent: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    font-style: italic;
+    line-height: 1.5;
+    position: relative;
+}
+
+p::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+a {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+
+a {
+    width: fit-content;
+    
+}
+.links{
+    display: flex;
+    justify-content: space-between;   
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    
+}
+
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}

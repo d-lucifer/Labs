@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 16
+    </title>
+    <style>
+        img {
+            height: 200px;
+            width: 300px;
+        }
+
+        section {
+            border: 2px;
+            border-style: solid;
+            border-color: grey;
+            margin-bottom: 30px;
+        }
+
+        .valid {
+            border: 2px solid green;
+        }
+
+        .invalid {
+            border: 2px solid red;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>Завдання 1</div>
+        <img src="gamepad.png" onclick="showSrc(this)">
+        <img src="keyboard.png" onclick="showSrc(this)">
+        <img src="блок.jpg" onclick="showSrc(this)">
+
+    </section>
+
+    <section>
+        <div>Завдання 2</div>
+        <div>
+            <a href="#" title="No Event Listener" id="addEvent">Add Event</a>
+            <a href="#" title="No Event Listener" id="removeEvent">Remove Event</a>
+        </div>
+    </section>
+
+    <section>
+        <div>Завдання 3</div>
+
+        <div>
+            <a href="#1" id="link1">Add Event</a>
+            <a href="#2" id="link2">Add Event</a>
+            <a href="#3" id="link3">Add Event</a>
+        </div>
+    </section>
+
+    <section>
+        <div>Завдання 5</div>
+
+        <div>
+            <input id="input1" placeholder="input 1">
+            <input id="input2" placeholder="input 2">
+            <input id="input3" placeholder="input 3">
+
+            <p id="demo">Дивись сюди</p>
+        </div>
+    </section>
+
+    <section>
+        <div>Завдання 7</div>
+
+        <div>
+            <p class="numb" onclick="numParagraphPower(this)">2</p>
+            <p class="numb" onclick="numParagraphPower(this)">4</p>
+            <p class="numb" onclick="numParagraphPower(this)">6</p>
+        </div>
+    </section>
+
+    <section>
+        <div>Завдання 8</div>
+
+        <div>
+            <input class="inputTask8" type="text" data-length="5" onblur="checkLength(this)">
+            <input class="inputTask8" type="text" data-length="8" onblur="checkLength(this)">
+            <input class="inputTask8" type="text" data-length="10" onblur="checkLength(this)">
+        </div>
+    </section>
+
+    <section>
+        <div id="div1" onclick="changeToRed()">1</div>
+        <div id="div2" onclick="changeToGreen()">2</div>
+        <div id="div3" onclick="changeToRed()">3</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

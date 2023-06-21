@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 120px;
+        width: 600px;
+        border: 2px;
+        border-color: grey;
+        border-style: solid;
+        transform: translate(-50%, -50%);
+      }
+
+      .head,
+      .formHead {
+        background: linear-gradient(60deg, rgba(200, 100, 217, 1) 27%, rgba(40, 200, 65, 1) 60%);
+        color: white;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .formHead {
+        text-align: center;
+      }
+
+      .head {
+        border-bottom: 3px solid red;
+        display: flex;
+        justify-content: space-between;
+      }
+      input,
+      select {
+        width: 90%;
+        height: 20px;
+        margin-left: 10px;
+      }
+
+      p {
+        margin-left: 10px;
+      }
+
+      .key {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .btn {
+        margin: 20px;
+        width: 200px;
+      }
+      .headTitle {
+        color: black;
+        font-size: 30px;
+      }
+      button {
+        margin: 5px;
+        cursor: pointer;
+        border: none;
+        background-color:blanchedalmond;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="head">
+      <div>
+        <p class="headTitle">Мій особистий блог</p>
+        <p>Цикало Антон</p>
+      </div>
+      <div style="display: flex; align-items: center">
+        <button>..Вхід..</button>
+        <button>..Реєстрація..</button>
+      </div>
+    </header>
+    <div class="form">
+      <div class="formHead">Реєстрація користувача</div>
+      <form>
+        <p>Прізвище</p>
+        <input type="text" />
+        <p>Ім'я</p>
+        <input type="text" />
+        <p>Логін</p>
+        <input type="text" />
+        <p>Навчальна група</p>
+        <select name="group" id="group">
+          <option>101-TH</option>
+          <option>102-TH</option>
+          <option>201-TH</option>
+          <option>202-TH</option>
+          <option>301-TH</option>
+          <option>302-TH</option>
+        </select>
+        <p>Пароль</p>
+        <input type="password" />
+        <p>Підтвердження паролю</p>
+        <input type="password" />
+        <div class="key">
+          <input class="btn" type="submit" value="Зареєструватись" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
